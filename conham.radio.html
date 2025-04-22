@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="fediverse:creator" content="@HamRadioVillage@defcon.social">
+    <!-- HTML Meta Tags -->
+
+<!-- Facebook Meta Tags -->
+<meta property="og:url" content="https://conham.radio">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ConHam Radio Frequencies">
+<meta property="og:description" content="Standard amateur radio frequencies for InfoSec conventions">
+
+<!-- Twitter Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta property="twitter:domain" content="conham.radio">
+<meta property="twitter:url" content="https://conham.radio">
+<meta name="twitter:title" content="ConHam Radio Frequencies">
+<meta name="twitter:description" content="Standard amateur radio frequencies for InfoSec conventions">
+
+<!-- Meta Tags Generated via https://www.opengraph.xyz -->
+    <title>ConHam Radio Frequencies</title>
+    <style>
+      body {
+        background-color: black;
+        background-image: radial-gradient(
+          rgba(0, 100, 0, 0.75), black 120%
+        );
+        height: 100vh;
+        margin: 0;
+
+        padding: 2rem;
+        color: white;
+        font: 1.3rem Inconsolata, monospace;
+        text-shadow: 0 0 5px #C8C8C8;
+        &::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100vw;
+          height: 100vh;
+          background: repeating-linear-gradient(
+            0deg,
+            rgba(black, 0.15),
+            rgba(black, 0.15) 1px,
+            transparent 1px,
+            transparent 2px
+          );
+          pointer-events: none;
+        }
+      }
+      ::selection {
+        background: #0080FF;
+        text-shadow: none;
+      }
+      pre {
+        margin: 0;
+      }
+      .blink {
+        animation: blink 2s infinite;
+      }
+      @keyframes blink {
+        0% {
+          opacity: 1;
+          color: white;
+        }
+        50% {
+          opacity: 0;
+          color: green;
+        }
+        100% {
+          opacity: 1;
+          color: white;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <pre>
+      <output>
+        <a href="https://conham.radio">~</a> > cat conhaminfo.txt
+
+        --------------------------------------------------------------------------------------
+
+         _____            _    _
+        / ____|          | |  | |
+       | |     ___  _ __ | |__| | __ _ _ __ ___
+       | |    / _ \| '_ \|  __  |/ _` | '_ ` _ \
+       | |___| (_) | | | | |  | | (_| | | | | | |
+        \_____\___/|_| |_|_|  |_|\__,_|_| |_| |_|
+
+<br />
+        ----------------------------------------------------------------------------------------
+        <strong>Simplex:  146.580 MHz | SSTV:  447.800 MHz | APRS:  144.39 MHz </strong>
+        <strong>Meshtastic:</strong>  HackerComms / AES256 / Z/lFwJn27PsPq16f+l8GhoBufEmQVGy3/2VpvBjh8IM=
+        ----------------------------------------------------------------------------------------
+        | <a href="defcon.html">DEFCON-33</a> | <a href="cactuscon.html">CactusCon</a> |
+
+           There's a lot of ham radio operators in the security community. Standardizing on
+           one frequency lets us find each other easily. This frequency has been in use at
+           DEF CON since at least DC16, and probably much earlier (and at other conferences
+           as well).
+
+           Want to have your information listed here? Open an issue on the
+           <a href="https://github.com/nkbooth/conham.radio">ConHam.radio github</a>.
+
+           <i>ConHam information maintained by the <a href="https://hamvillage.org">Ham Radio Village</a> and <a href="https://n1cck.us">Nick Booth N1CCK</a>
+           Wind up here but don't have a license? Odds are good that your local hacker con
+           is running an exam session - check HackerTracker or the schedule. No ham radio
+           presence at the con? Reach out - first we'll get you licensed, then we'll see if
+           we can take part next year!
+           </i>
+
+        ----------------------------------------------------------------------------------------
+
+        <a href="https://conham.radio">~</a> > <span class="blink">_</span>
+      </output>
+      <script>
+        document.addEventListener("keypress", GoHome);
+
+        function GoHome() {
+          if (event.key === "Enter")
+          {
+            window.open("https://conham.radio", "_self");
+          }
+        }
+      </script>
+    </pre>
+  </body>
+</html>
